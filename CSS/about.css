@@ -16,10 +16,13 @@
 }
 
 .mainBody {
+    max-height: 92%;
+    min-height: 92%;
+    padding: 1.5rem;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: space-evenly;
+    justify-content: space-between;
 }
 
 .navbttns {
