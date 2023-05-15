@@ -36,14 +36,14 @@
     <head>
         <meta charset="UTF-8"> <!--Importing the normal character set-->
         <title>Writing & Design!</title> <!--Page Title-->
-        <link rel = "stylesheet" href="../CSS/index.css">
-        <link rel = "stylesheet" href="../CSS/topBar.css">
+        <link rel = "stylesheet" href="../CSS/main.css">
+        <link rel = "stylesheet" href="../CSS/page.css">
         <script src="../JS/chatGPT.js"></script>
     </head>
     <body>
         <div class = "topBar">
-            <img src="../Assets/gptLogo.png" alt="ChatGPT logo">
-            <h1 id="Title">Chat GPT in Education</h1>
+            <img id="gptLogo" src="../Assets/gptLogo.png" alt="ChatGPT logo">
+            <h1 id="Title"> ChatGPT in Education</h1>
 
             <script type="text/javascript"> //Script to change page to home when button is pressed, gotten from https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
                 document.getElementsByClassName("topbar").onclick = function () { 
@@ -53,12 +53,15 @@
         </div>
 
         <div class = "mainBody">
-            <h2>Conclusion</h2>
-            <button class="Bttn" onclick='switchText()'>
-                Switch response type
-            </button>
-            <p class="responseTxt" id="identifier"></p>
-            <div class="responseTxt" id="conclusionResponse"></div>
+            <div class="mainContent">
+                <h2>Conclusion</h2>
+                <button class="Bttn" onclick='switchText()'>
+                    Switch response type
+                </button>
+                <p class="responseTxt" id="identifier"></p>
+                <div class="responseTxt" id="conclusionResponse"></div>
+            </div>
+            
 
             <div class="navBttns">
                 <button class = "Bttn" id="BackBttn"><- Back</button>
