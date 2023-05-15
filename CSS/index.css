@@ -1,0 +1,28 @@
+p {
+    font-size: 1.5rem;
+}
+
+.mainBody {
+    max-height: 92%;
+    min-height: 92%;
+    padding: 1.5rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbttns {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bttn {
+    width: 20rem;
+    height: 5rem;
+    font-size: 2rem;
+    border-color: lightseagreen;
+}

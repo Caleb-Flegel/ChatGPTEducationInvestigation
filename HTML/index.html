@@ -11,7 +11,7 @@
             <h1 id="Title"> ChatGPT in Education</h1>
 
             <script type="text/javascript"> //Script to change page to home when button is pressed, gotten from https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
-                document.getElementsByClassName("topbar").onclick = function () { 
+                document.getElementById("Title").onclick = function () { 
                     location.href = "index.html"
                 }
             </script>
@@ -20,10 +20,12 @@
 
         <div class = "mainBody">
             <div class="mainContent">
+                <h2 id="pageTitle">Welcome!</h2>
                 <p>This is a project investigating ChatGPT in education and how education can adapt to take advantage of this new technology</p>
             </div>
 
             <div class="navBttns">
+                <h2>Go to:</h2>
                 <button class="Bttn" id="IntroBttn">Introduction</button>
                 <script type="text/javascript"> //Script to change to feedback page when button is pressed
                     document.getElementById("IntroBttn").onclick = function () { 
