@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8"> <!--Importing the normal character set-->
+        <title>Writing & Design!</title> <!--Page Title-->
+        <link rel = "stylesheet" href="../CSS/index.css">
+        <link rel = "stylesheet" href="../CSS/topBar.css">
+    </head>
+    <body>
+        <div class = "topBar">
+            <img src="../Assets/gptLogo.png" alt="ChatGPT logo">
+            <h1 id="Title">Chat GPT in Education</h1>
+
+            <script type="text/javascript"> //Script to change page to home when button is pressed, gotten from https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
+                document.getElementById("topbar").onclick = function () { 
+                    location.href = "index.html"
+                }
+            </script>
+        </div>
+        <div class = "mainBody">
+            <p>This is a bibliography</p>
+
+            <div class="navBttns">
+                <button class = "Bttn" id="BackBttn">Conclusion</button>
+                <script type="text/javascript"> //Script to change page to home when button is pressed, gotten from https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
+                    document.getElementById("BackBttn").onclick = function () { 
+                        location.href = "conclusion.html"
+                    }
+                </script>
+                <button class = "Bttn" id="ForwardBttn">Home</button>
+                <script type="text/javascript"> //Script to change page to home when button is pressed, gotten from https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
+                    document.getElementById("ForwardBttn").onclick = function () { 
+                        location.href = "index.html"
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

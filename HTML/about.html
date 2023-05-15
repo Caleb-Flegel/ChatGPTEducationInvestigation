@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="UTF-8"> <!--Importing the normal character set-->
+        <title>Writing & Design!</title> <!--Page Title-->
+        <link rel = "stylesheet" href="../CSS/index.css">
+        <link rel = "stylesheet" href="../CSS/topBar.css">
+    </head>
+    <body>
+        <div class = "topBar">
+            <img src="../Assets/gptLogo.png" alt="ChatGPT logo">
+            <h1 id="Title">Chat GPT in Education</h1>
+
+            <script type="text/javascript"> //Script to change page to home when button is pressed, gotten from https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
+                document.getElementById("topbar").onclick = function () { 
+                    location.href = "index.html"
+                }
+            </script>
+        </div>
+        <div class = "mainBody">
+            <h1 class="PageTitle">Profiles</h1>
+            <div class="content">
+                <div class="profiles">
+                    <div class="section" id="profile">
+                        <div class="info">
+                            <h2>Caleb Flegel</h2>
+                            <table> 
+                                <tr>
+                                    <th>Hometown</th>
+                                    <td>Spokane, Washington</td>
+                                </tr>
+                                <tr>
+                                    <th>Major</th>
+                                    <td>Computer Science & Computer Engineering</td>
+                                </tr>
+                                <tr>
+                                    <th>Class Standing</th>
+                                    <td>Junior</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="picture">
+                            <img class="profilePic" src="Assets/Caleb_snow.jpg" alt="Caleb Flegel" height="400px">
+                        </div>
+                    </div>
+        
+                    <div class="section" id="profile">
+                        <div class="info">
+                            <h2></h2>
+                            <table>
+                                <tr>
+                                    <th>Hometown</th>
+                                    <td>Placeholder</td>
+                                </tr>
+                                <tr>
+                                    <th>Major</th>
+                                    <td>Engineering</td>
+                                </tr>
+                                <tr>
+                                    <th>Class Standing</th>
+                                    <td>First Year</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="picture">
+                            <img class="profilePic" src="Assets/thumbnail_Megan's Picture.jpg" alt="Megan Hirasaki" height="400px">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+    <body onload="showHumanText()"></body>
+    <script type="text/javascript">
+        var humanResponse = true
+        var humanText = "concerns text"
+        var gptText = ""
+
+        function switchText () {
+            if (humanResponse) {
+                document.getElementById("identifier").innerText = "ChatGPT Response:"
+                humanResponse = false
+                if(gptText == "") {
+                    chat("What are some concerns about large language models like chatGPT in education?", "concernsResponse")
+                }
+                else {
+                    document.getElementById("concernsResponse").innerHTML = gptText
+                }
+            }
+            else {
+                //Setting gptText since a gptText must be generated if here
+                gptText = document.getElementById("concernsResponse").innerHTML
+                humanResponse = true
+                showHumanText()
+            }
+        }
+
+        function showHumanText () {
+            document.getElementById("identifier").innerText = "Human Response:"
+            var d = document.getElementById("concernsResponse")
+            d.innerHTML = ""
+            const p = document.createElement('p');
+            p.innerHTML = humanText;
+            d.appendChild(p);
+        }
+    </script>
+    <head>
+        <meta charset="UTF-8"> <!--Importing the normal character set-->
+        <title>Writing & Design!</title> <!--Page Title-->
+        <link rel = "stylesheet" href="../CSS/index.css">
+        <link rel = "stylesheet" href="../CSS/topBar.css">
+        <script src="../JS/chatGPT.js"></script>
+    </head>
+    <body>
+        <div class = "topBar">
+            <img src="../Assets/gptLogo.png" alt="ChatGPT logo">
+            <h1 id="Title">Chat GPT in Education</h1>
+
+            <script type="text/javascript"> //Script to change page to home when button is pressed, gotten from https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
+                document.getElementsByClassName("topbar").onclick = function () { 
+                    location.href = "index.html"
+                }
+            </script>
+        </div>
+
+        <div class = "mainBody">
+            <h2>The Concerns</h2>
+            <button class="Bttn" onclick='switchText()'>
+                Switch response type
+            </button>
+            <p class="responseTxt" id="identifier"></p>
+            <div class="responseTxt" id="concernsResponse"></div>
+
+            <div class="navBttns">
+                <button class = "Bttn" id="BackBttn"><- Back</button>
+                <script type="text/javascript"> //Script to change page to home when button is pressed, gotten from https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
+                    document.getElementById("BackBttn").onclick = function () { 
+                        location.href = "benefits.html"
+                    }
+                </script>
+                <button class = "Bttn" id="ForwardBttn">Next -></button>
+                <script type="text/javascript"> //Script to change page to home when button is pressed, gotten from https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
+                    document.getElementById("ForwardBttn").onclick = function () { 
+                        location.href = "future.html"
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
