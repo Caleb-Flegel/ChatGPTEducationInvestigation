@@ -2,7 +2,7 @@
     <body onload="showHumanText()"></body>
     <script type="text/javascript">
         var humanResponse = true
-        var humanText = "benefits text"
+        var humanText = "intro text"
         var gptText = ""
 
         function switchText () {
@@ -10,15 +10,15 @@
                 document.getElementById("identifier").innerText = "ChatGPT Response:"
                 humanResponse = false
                 if(gptText == "") {
-                    chat("What are some benefits about large language models like chatGPT in education?", "benefitsResponse")
+                    chat("Write me an intro for a paper on how ChatGPT impacts and benefits education?", "introResponse")
                 }
                 else {
-                    document.getElementById("benefitsResponse").innerHTML = gptText
+                    document.getElementById("introResponse").innerHTML = gptText
                 }
             }
             else {
                 //Setting gptText since a gptText must be generated if here
-                gptText = document.getElementById("benefitsResponse").innerHTML
+                gptText = document.getElementById("introResponse").innerHTML
                 humanResponse = true
                 showHumanText()
             }
@@ -26,7 +26,7 @@
 
         function showHumanText () {
             document.getElementById("identifier").innerText = "Human Response:"
-            var d = document.getElementById("benefitsResponse")
+            var d = document.getElementById("introResponse")
             d.innerHTML = ""
             const p = document.createElement('p');
             p.innerHTML = humanText;
@@ -36,13 +36,13 @@
     <head>
         <meta charset="UTF-8"> <!--Importing the normal character set-->
         <title>Writing & Design!</title> <!--Page Title-->
-        <link rel = "stylesheet" href="../CSS/main.css">
-        <link rel = "stylesheet" href="../CSS/page.css">
-        <script src="../JS/chatGPT.js"></script>
+        <link rel = "stylesheet" href="CSS/main.css">
+        <link rel = "stylesheet" href="CSS/page.css">
+        <script src="/JS/chatGPT.js"></script>
     </head>
     <body>
         <div class = "topBar">
-            <img id="gptLogo" src="../Assets/gptLogo.png" alt="ChatGPT logo">
+            <img id="gptLogo" id="gptLogo" src="Assets/gptLogo.png" alt="ChatGPT logo">
             <h1 id="Title"> ChatGPT in Education</h1>
 
             <script type="text/javascript"> //Script to change page to home when button is pressed, gotten from https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
@@ -54,29 +54,29 @@
 
         <div class = "mainBody">
             <div class="mainContent">
-                <h2 id="pageTitle">The Benefits</h2>
+                <h2 id="pageTitle">Introduction</h2>
                 <button class="Bttn" onclick='switchText()'>
                     Switch response type
                 </button>
                 <p class="responseTxt" id="identifier"></p>
-                <div class="responseTxt" id="benefitsResponse"></div>
+                <div class="responseTxt" id="introResponse"></div>
             </div>
-            
-
+    
             <div class="navBttns">
                 <button class = "Bttn" id="BackBttn"><- Back</button>
                 <script type="text/javascript"> //Script to change page to home when button is pressed, gotten from https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
                     document.getElementById("BackBttn").onclick = function () { 
-                        location.href = "intro.html"
+                        location.href = "index.html"
                     }
                 </script>
                 <button class = "Bttn" id="ForwardBttn">Next -></button>
                 <script type="text/javascript"> //Script to change page to home when button is pressed, gotten from https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
                     document.getElementById("ForwardBttn").onclick = function () { 
-                        location.href = "concerns.html"
+                        location.href = "benefits.html"
                     }
                 </script>
             </div>
+            
         </div>
     </body>
 </html>
