@@ -7,6 +7,10 @@
     font-size: 2rem;
 }
 
+p {
+    font-size: 2rem;
+}
+
 .navbttns {
     display: flex;
     flex-direction: row;

@@ -2,7 +2,10 @@
     <body onload="showHumanText()"></body>
     <script type="text/javascript">
         var humanResponse = true
-        var humanText = "concerns text"
+        var humanText = "With the tremendous and sudden popularity of ChatGPT, many have pondered on the subsequential effects of AI like ChatGPT on education which is already being researched and seen in the way students and educators interact with the app and engage in the learning process. Many are concerned about the future of teaching for actual human “teachers” and the debate on whether AI will take over the world has become much more than an elementary school assignment but an absolute fear for educators. Some are highly receptive to its grand unanticipated entrance while some fear it will take away the impact of teaching which is more than just giving information to students. Some other concerns with ChatGPT include an uprise in cheating due to quick retrieval of answers to a vast number of topics and for free, lack of authenticity, especially in writing, and many fear a worldwide attack on the upcoming generation's frontal and prefrontal cortexes (the parts of the brain responsible for creativity and critical thinking) as it might cause a wave of demotivation to settle on students, making them resistant to inventiveness and practicality.\n\n"
+        humanText += "The use of artificial intelligence (AI) in education involves a number of stakeholders, including academics, decision-makers in government policy, researchers, technology specialists, educational strategists, instructional designers, and administrators. It is advised that policies, guidelines, and best practices be developed through constant communication and collaboration among different stakeholders in order to ensure the ethical and efficient usage of AI technologies like ChatGPT. Integrating critical thinking, creativity, problem-solving, and digital literacy abilities as clear learning outcomes and competencies inside course and curriculum designs should be a major priority. The use of AI tools needs to be prioritized in curricula and instructional strategies. It is vital to promote the use of personalized, adaptive learning environments backed by AI that are tailored to the needs of specific students and encourage self-directed learning.\n\n"
+        humanText += "Some other concerns include a lack of human interaction, which lowers the quality of the educational experience for students; an overreliance and dependency on technology; potential biases in the data that could lead to discriminatory or misleading responses; privacy concerns because it may collect and store personal information about students; questions about the role of teachers and the impact on the job market for educators; a lack of human interaction.\n\n"
+        
         var gptText = ""
 
         function switchText () {
@@ -29,7 +32,7 @@
             var d = document.getElementById("concernsResponse")
             d.innerHTML = ""
             const p = document.createElement('p');
-            p.innerHTML = humanText;
+            p.innerText = humanText;
             d.appendChild(p);
         }
     </script>
@@ -38,7 +41,7 @@
         <title>Writing & Design!</title> <!--Page Title-->
         <link rel = "stylesheet" href="CSS/main.css">
         <link rel = "stylesheet" href="CSS/page.css">
-        <script src="/JS/chatGPT.js"></script>
+        <script src="JS/chatGPT.js"></script>
     </head>
     <body>
         <div class = "topBar">

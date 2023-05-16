@@ -2,7 +2,22 @@
     <body onload="showHumanText()"></body>
     <script type="text/javascript">
         var humanResponse = true
-        var humanText = "future text"
+        var humanText = "What is the current state of Education (with and without ChatGPT)?\n\n"
+        humanText += "Although most might not see it, education already includes a ton of AI in administration. Look at Grammarly for instance- Grammarly’s AI system combines machine learning with a variety of natural language processing approaches. Natural language processing is a branch of AI that involves teaching machines to understand and process human language (English, for example), and perform useful tasks, such as machine translation. (“How We Use AI to Enhance Your Writing | Grammarly Spotlight”). I am even typing this paper on Grammarly to help with spell check, punctuation, and concord, thereby giving me more time to focus on research and the development of ideas.\n\n"  
+        humanText += "AI systems are responsible for grading on sites like Pearson, and even plagiarism checks. AI is also being used to improve the learning of people with disabilities in the classroom, such as speech-to-text recognition. Another good example is the creation of audio descriptions for videos, making them more accessible to people with visual impairments (Christopherson).\n\n"
+        humanText += "With the integration of ChatGPT in education though, there hasn't been a completely direct effect like in the aforementioned instances. It has provided a more interactive and engrossing learning style to suit each student. It has also given students personal tutors outside class (for free) and has been seen as highly helpful to students in large institutions where professors are harder to communicate with due to bureaucracy or class size. AI-powered adaptive learning platforms also help to analyze student performance data and provide personalized recommendations to help students improve their learning outcomes (Ortiz). All the same, it has also encouraged students who might not understand their potential for success yet to cut corners to success. Thus, there is a fence between the effects of ChatGPT and its integration in education.\n\n"
+        
+        humanText += "\nSuggestions\n\n"
+        humanText += "K-12:\n"
+        humanText += "ChatGPT provides personalized learning experiences that cater to the individual needs of students, especially in their early stages of development, where it is necessary to discover their learning styles and understand how they function under different learning conditions. It can also assist teachers in answering student questions quicker, grading assignments, and even in making quizzes and formulating word problems to engage students' critical thinking.\n\n"
+        humanText += "Within two months of its inception, the Walton Family Foundation found that 51 percent of K–12 instructors reported utilizing ChatGPT, with 40% doing so at least once per week. 53 percent of teachers said ChatGPT would be used more frequently in the upcoming year. Many educators have come up with creative methods to use ChatGPT in the classroom. A K-12 educator in Oregon, Cherie Shields, for instance, asked ChatGPT to come up with project ideas for a sci-fi unit, giving students creative alternatives to the usual essay assignments, like designing and explaining an alien poster.\n\n"
+        
+        humanText += "Higher Education:\n"
+        humanText += "ChatGPT has the potential to improve learning procedures in higher institutions and has been. It can be used independently or incorporated into already-used platforms and systems at higher education institutions (HEIs). The ability of ChatGPT to carry out a variety of tasks, including simple research, mathematics, and proofing, can enhance teaching and learning activities. ChatGPT can be utilized in research at several phases of the research process, including helping with the technical parts of grant applications for research and possibly assisting in forecasting whether academic publications will be accepted through peer review.\n\n"
+        humanText += "Although there has been a huge ethical concern concerning its use in this capacity. As a non-human contributor to knowledge creation, ChatGPT has also been used to generate full academic journal papers!\n\n"
+        humanText += "Professors and Educators:\n"
+        humanText += "The language translation function in ChatGPT has proven useful for educators who work with a variety of student populations. Teachers only need to type instructions in the chat box to instruct ChatGPT to translate readings or other resources into the native tongues of the students. Students' comprehension and completion of their assignments are made simpler by this capacity. Educators can modify materials for students with different reading levels thanks to ChatGPT's ability to rewrite responses at various reading levels. Students can actively participate in class utilizing differentiated materials by delivering tenth-grade work to ChatGPT and asking for a restructure at a sixth-grade level."
+        
         var gptText = ""
 
         function switchText () {
@@ -29,7 +44,7 @@
             var d = document.getElementById("futureResponse")
             d.innerHTML = ""
             const p = document.createElement('p');
-            p.innerHTML = humanText;
+            p.innerText = humanText;
             d.appendChild(p);
         }
     </script>
@@ -38,7 +53,7 @@
         <title>Writing & Design!</title> <!--Page Title-->
         <link rel = "stylesheet" href="CSS/main.css">
         <link rel = "stylesheet" href="CSS/page.css">
-        <script src="/JS/chatGPT.js"></script>
+        <script src="JS/chatGPT.js"></script>
     </head>
     <body>
         <div class = "topBar">

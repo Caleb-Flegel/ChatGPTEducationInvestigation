@@ -1,4 +1,32 @@
 <html>
+    <body onload="showBib()"></body>
+    <script>
+        var bibText = "1)	A Comparative Approach to Recognition Chatgpt - Iesalc.Unesco.Org, www.iesalc.unesco.org/wp-content/uploads/2023/04/ChatGPT-and-Artificial-Intelligence -in-higher-education-Quick-Start-guide_EN_FINAL.pdf?trk=public_post-text. Accessed 16 May 2023.\n\n"
+        bibText += "2)	Adiguzel, Tufan, et al. “Revolutionizing Education with AI: Exploring the Transformative Potential of ChatGPT.” Contemporary Educational Technology, vol. 15, no. 3, 1 July 2023, p. ep429, https://doi.org/10.30935/cedtech/13152. Accessed 8 Apr. 2023.\n\n"
+        bibText += "3)	Blose, Abreanna. As ChatGPT Enters the Classroom, Teachers Weigh Pros and Cons | NEA. www.nea.org/advocating-for-change/new-from-nea/chatgpt-enters-classroom-teachers-we igh-pros-and-cons#:~:text=The%20biggest%20concern%20is%20cheating,be%20%E2% 80%9CAI%2Dproof%E2%80%9D.\n\n"
+        bibText += "4)	Cascella, Marco, et al. “Evaluating the Feasibility of ChatGPT in Healthcare: An Analysis of Multiple Clinical and Research Scenarios.” Journal of Medical Systems, vol. 47, no. 1, 4 Mar. 2023, https://doi.org/10.1007/s10916-023-01925-4.\n\n"
+        bibText += "5)	Christopherson, Robin. “What Does Chat GPT Think About How AI Can Help Disabled People?” AbilityNet, abilitynet.org.uk/news-blogs/what-does-chat-gpt-think-about-how-ai-can-help-disabled-p eople#:~:text=For%20example%2C%20AI%20can%20be,treatment%20for%20people% 20with%20disabilities.\n\n"
+        bibText += "6)	 Firat, Mehmet. “What ChatGPT Means for Universities: Perceptions of Scholars and Students.” Journal of Applied Learning and Teaching, vol. 6, no. 1, 18 Apr. 2023, journals.sfu.ca/jalt/index.php/jalt/article/view/769, https://doi.org/10.37074/jalt.2023.6.1.22. Accessed 22 Apr. 2023.\n\n"
+        bibText += "7)	Kirchenbauer, John, et al. A Watermark for Large Language Models. University of Maryland, 27 Jan. 2023.\n\n"
+        bibText += "8)	Ortiz, Sabrina. “What Is ChatGPT and Why Does It Matter? Here’s What You Need to Know.” ZDNET, Apr. 2023, www.zdnet.com/article/what-is-chatgpt-and-why-does-it-matter-heres-everything-you-ne ed-to-know \n\n"
+        bibText += "9)	“PACEspectives: ChatGPT and the Future of Education.” Pace University New York, 4 Apr. 2023, www.pace.edu/news/pacespectives-chatgpt-and-future-of-education#:~:text=In%20late% 202022%2C%20the%20artificial,complex%20and%20realistic%20human%20conversati on.\n\n"
+        bibText += "10)	Paragraph 3. “How We Use AI to Enhance Your Writing | Grammarly Spotlight.” Grammarly Spotlight: How We Use AI to Enhance Your Writing, 17 May 2019, www.grammarly.com/blog/how-grammarly-uses-ai.\n\n"
+        bibText += "11)	Saltman, Kenneth J. The Alienation of Fact: Digital Educational Privatization, AI, and the False Promise of Bodies and Numbers. Direct.mit.edu, New York, The MIT Press, 22 Nov. 2022, direct.mit.edu/books/oa-monograph/5497/The-Alienation-of-FactDigital-Educational. Accessed 2 May 2023. \n\n"
+        bibText += "12)	Sallam, Malik. “ChatGPT Utility in Healthcare Education, Research, and Practice: Systematic Review on the Promising Perspectives and Valid Concerns.” Healthcare, vol. 11, no. 6, 19 Mar. 2023, p. 887, https://doi.org/10.3390/healthcare11060887. \n\n"
+        bibText += "13)	Stock, Lukas. “ChatGPT Is Changing Education, AI Experts Say — but How? – DW – 01/24/2023.” Dw.com, 24 Jan. 2023, www.dw.com/en/chatgpt-is-changing-education-ai-experts-say-but-how/a-64454752. Accessed 1 May 2023. \n\n"
+        bibText += "14)	Sullivan, Miriam, et al. “ChatGPT in Higher Education: Considerations for Academic Integrity and Student Learning.” Journal of Applied Learning & Teaching, vol. 6, no. 1, 21 Mar. 2023, https://doi.org/10.37074/jalt.2023.6.1.17. \n\n"
+        bibText += "15)	Roose, Kevin. “Don’t Ban ChatGPT in Schools. Teach with It.” The New York Times, 12 Jan. 2023, www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html. Accessed 1 May 2023. \n\n"
+        bibText += "16)	“What You Can Learn from Students about ChatGPT.” The Chronicle of Higher Education, 30 Mar. 2023, www.chronicle.com/newsletter/teaching/2023-03-30. Accessed 1 May 2023"
+        
+
+        function showBib () {
+            var d = document.getElementById("bib");
+            const p = document.createElement('p');
+            p.innerText = bibText;
+            d.appendChild(p);
+        }
+        
+    </script>
     <head>
         <meta charset="UTF-8"> <!--Importing the normal character set-->
         <title>Writing & Design!</title> <!--Page Title-->
@@ -19,6 +47,7 @@
         <div class = "mainBody">
             <div class="mainContent">
                 <h2 id="pageTitle">Bibliography</h2>
+                <div id="bib"></div>
             </div>
             
 

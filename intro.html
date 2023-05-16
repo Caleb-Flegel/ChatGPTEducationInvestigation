@@ -2,7 +2,11 @@
     <body onload="showHumanText()"></body>
     <script type="text/javascript">
         var humanResponse = true
-        var humanText = "intro text"
+        var humanText = "   Artificial intelligence (AI) has permeated a number of areas, including security, transportation, politics, financial markets, the education sect, and welfare systems, and has become a crucial part of life today Although artificial intelligence (AI) has the potential to transform civilization, it is crucial to realize that AI is not necessarily clever; instead, it can perform activities that are deemed intelligent. AI is a multidisciplinary field that combines computer science, statistics, information theory, mathematics, and some level of engineering. AI relies on algorithms and massive data. Artificial intelligence (AI) is any theory, method, or technology that enables machines, especially computers, to emulate human thought and behavior. Despite its flaws, artificial intelligence (AI) is viewed as a revolutionary technology that helped usher in the era of artificial intelligence, with applications in robotics, natural language processing, picture recognition, expert systems, neural networks, and machine learning.\n\n"
+        humanText += "  The quick adoption of ChatGPT, created by OpenAI, is a result of recent advances in artificial intelligence (AI). Other social media networks took significantly longer to reach this milestone than ChatGPT, which amassed one million subscribers in just five days. Discussions regarding its effects have been spurred by its broad range of uses and promise to boost productivity in a number of areas, including education. While some consider ChatGPT to be a ground-breaking tool that has the potential to improve education and other industries, others are concerned about its potential for disruption and ethical ramifications. Critics contend that these worries are fueled by people's unwillingness to change and the technology's capacity for transformation. Since its introduction, educators' opinions on ChatGPT's capacity to carry out challenging tasks in the classroom have been divided.\n\n"
+        humanText += "  The GPT-3 Natural Language Processing (NLP) model, which has 175 billion parameters, ten times more than earlier language models, is the foundation upon which ChatGPT is created. It performed well on a variety of NLP datasets, including word completion and question-answering. With the release of GPT-4, it was possible to process images alongside text and employ Rule-Based Reward Models in training.\n\n"
+        humanText += "  The way that students learn and engage with their academics has a great deal of potential to change thanks to AI innovations like ChatGPT. Understanding the effects of these AI-driven technologies on students and educational institutions, particularly in higher institutions, is essential as they grow more powerful and available. AI in education has the power to modify existing methods, aid individualized learning, and possibly even help with critical thinking. However, it also poses significant queries concerning potential difficulties resulting from this technological change."
+        
         var gptText = ""
 
         function switchText () {
@@ -29,7 +33,7 @@
             var d = document.getElementById("introResponse")
             d.innerHTML = ""
             const p = document.createElement('p');
-            p.innerHTML = humanText;
+            p.innerText = humanText;
             d.appendChild(p);
         }
     </script>

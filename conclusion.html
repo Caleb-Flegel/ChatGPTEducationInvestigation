@@ -2,7 +2,11 @@
     <body onload="showHumanText()"></body>
     <script type="text/javascript">
         var humanResponse = true
-        var humanText = "conclusion text"
+        var humanText = "The future of education with ChatGPT is promising. The prevalence of AI applications—including popular digital assistants like Siri and Alexa—indicates that the growth of AI even in the academic sect will probably be slow.\n\n"
+        humanText += "AI could have majorly two effects. On the one hand, the use of AI tools by students for tasks, such as ChatGPT, calls for a reevaluation of instructive methods. Positive changes may result from this modification in teaching and learning strategies. On the other side, having access to the accumulated wisdom and experiences kept in AI models like ChatGPT gives you a lot of power.\n\n"
+        humanText += "It is crucial to approach ChatGPT's use with caution and imagination if you want to utilize it appropriately. Facilitating dialogues, giving clear instructions, tying its use to learning objectives, evaluating assessment procedures, revising academic integrity policies, and providing training to improve inquiry formulation are some suggestions for responsible use. These methods aid in ensuring that ChatGPT is used in education in an ethical and efficient manner.\n\n"
+        humanText += "The fact is AI integration in all aspects of human existence is inevitable. It will prove best for the future if educators and students focus on integrating it in a way that is helpful to student learning rather than eradicating it. The goal should be to use AI technology to enhance human interaction and intelligence and improve the learning experience rather than replace it.\n\n"
+        
         var gptText = ""
 
         function switchText () {
@@ -29,7 +33,7 @@
             var d = document.getElementById("conclusionResponse")
             d.innerHTML = ""
             const p = document.createElement('p');
-            p.innerHTML = humanText;
+            p.innerText = humanText;
             d.appendChild(p);
         }
     </script>
@@ -38,7 +42,7 @@
         <title>Writing & Design!</title> <!--Page Title-->
         <link rel = "stylesheet" href="CSS/main.css">
         <link rel = "stylesheet" href="CSS/page.css">
-        <script src="/JS/chatGPT.js"></script>
+        <script src="JS/chatGPT.js"></script>
     </head>
     <body>
         <div class = "topBar">

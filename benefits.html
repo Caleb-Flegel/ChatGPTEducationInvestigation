@@ -2,7 +2,14 @@
     <body onload="showHumanText()"></body>
     <script type="text/javascript">
         var humanResponse = true
-        var humanText = "benefits text"
+        var humanText = "•	The automation of discussions with ChatGPT results in less manual interaction, which boosts efficiency. By relying on ChatGPT to manage client inquiries and chats without human interaction, businesses can save time and resources. By streamlining the procedure, this automation enables firms to manage several interactions at once.\n\n"
+        humanText += "•	ChatGPT's fast response generation significantly boosts effectiveness. ChatGPT promotes quicker interactions and shortens client wait times by generating responses quickly. This speed is especially useful in situations like customer service or real-time engagements where prompt replies are essential.\n\n"
+        humanText += "•	Improved accuracy is a result of ChatGPT's capacity to comprehend conversation context and produce pertinent responses. ChatGPT learns patterns and develops contextual awareness through training on a sizable collection of conversational data, enabling it to offer pertinent and accurate responses. This contextual awareness reduces the possibility of misunderstandings or irrelevant responses during manual interactions.\n\n"
+        humanText += "•	With its deep learning-based AI architecture, the ChatGPT Improved Accuracy (CGA) model excels at producing precise and insightful discussions. Based on user input, CGA generates believable and interesting dialogues using OpenAI's GPT-3 pre-trained model. In order to adapt to different circumstances and produce more exact results, it continuously learns from its failures. It combines accuracy with generative skills.\n\n"
+        humanText += "•	The ability of ChatGPT to produce human-like responses in real-time results in cost reductions. Businesses can lessen their dependency on costly human customer support employees by using ChatGPT. Cost-saving features include ChatGPT's steady availability and capacity to effectively process a large number of inquiries.\n\n"
+        humanText += "•	The ability of ChatGPT to learn and develop over time also helps to reduce costs. Chatbot responses don't need to be updated manually as often because the model is always interacting with users and learning from their input. This capacity for self-improvement assures that ChatGPT maintains its efficacy and accuracy without adding to costs.\n\n"
+        humanText += "•	In the end, ChatGPT enables organizations to deliver a thorough and customized client experience by improving productivity, accuracy, and cost-effectiveness. Businesses can concentrate on more important duties while ensuring that consumers receive prompt and accurate service by automating discussions. This all-inclusive method of customer care promotes loyalty and client pleasure."
+
         var gptText = ""
 
         function switchText () {
@@ -29,7 +36,7 @@
             var d = document.getElementById("benefitsResponse")
             d.innerHTML = ""
             const p = document.createElement('p');
-            p.innerHTML = humanText;
+            p.innerText = humanText;
             d.appendChild(p);
         }
     </script>
@@ -38,7 +45,7 @@
         <title>Writing & Design!</title> <!--Page Title-->
         <link rel = "stylesheet" href="CSS/main.css">
         <link rel = "stylesheet" href="CSS/page.css">
-        <script src="/JS/chatGPT.js"></script>
+        <script src="JS/chatGPT.js"></script>
     </head>
     <body>
         <div class = "topBar">
